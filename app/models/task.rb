@@ -1,4 +1,6 @@
 class Task < ApplicationRecord
     belongs_to :user
-    validates :content, presence: true, length: { maximum: 100 }
+    
+    validates :content, presence: true, length: { maximum: 255 }
+
 end
